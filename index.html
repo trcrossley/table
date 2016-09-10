@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Dummy Data Table</title>
+  <meta name="description" content="Dummy Data Table">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Biryani:900|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header-box">
+    <div class="header">
+      <h1>TIME's Influential Leaders 2016</h1>
+    </div>
+  </div>
+  <table id="table" style="width:100%">
+    <tr>
+      <th>Title</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Gender</th>
+      <th>Country</th>
+    </tr>
+  </table>
+
+  <div class="edit">
+    <h1>Edit Information</h1>
+    <div class="edit-box">
+      <div class="edit-opt">
+        <strong>Title</strong>
+        <select name="titles">
+          <option></option>
+          <option value="mr">Mr.</option>
+          <option value="ms">Ms.</option>
+          <option value="mrs">Mrs.</option>
+        </select>
+      </div>
+      <div class="edit-opt">
+        <strong>First Name:</strong>
+        <input type="text" name="firstname">
+      </div>
+      <div class="edit-opt">
+        <strong>Last Name</strong>
+        <input type="text" name="lastname">
+      </div>
+      <div class="edit-opt">
+        <strong>Gender</strong>
+        <form action="">
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+        </form>
+      </div>
+      <div class="edit-opt">
+        <strong>Country</strong>
+        <select name="country">
+          <option></option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="china">China</option>
+          <option value="russia">Russia</option>
+          <option value="france">France</option>
+          <option value="germany">Germany</option>
+          <option value="myanmar">Myanmar</option>
+        </select>
+      </div>
+      <div class="edit-opt">
+        <button type="submit" class="update-btn">Update</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+
+</body>
+
+</html>

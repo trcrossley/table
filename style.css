@@ -1,0 +1,79 @@
+body {
+  background-color: white;
+}
+
+.header-box {
+  background-color: #66C7CA;
+  color: white;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.header {
+  font-family: 'Biryani', sans-serif;
+  text-shadow: 2px 2px black;
+  display: flex;
+  justify-content: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+tr:nth-child(even).selected {
+  background-color: blue;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+tr:nth-child(odd).selected {
+  background-color: blue;
+  color: white;
+}
+
+.edit {
+  text-align: center;
+  background-color: #66C7CA;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.edit h1 {
+  font-family: 'Biryani', sans-serif;
+  text-shadow: 2px 2px black;
+  color: white;
+}
+
+.edit-box {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.edit-opt {
+  background-color: white;
+  border: 2px solid lightgrey;
+  margin: 5px;
+  text-align: center;
+  height: 70px;
+}
+
+.update-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  height: 70px;
+  width: 70px;
+}
