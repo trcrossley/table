@@ -65,6 +65,7 @@ $(document).ready(function() {
   var tr;
   for (var i = 0; i < data.length; i++) {
     tr = $('<tr/>');
+    tr.append("<td> <input type='radio' name='radio-btn'> </td>");
     tr.append("<td>" + data[i].Title + "</td>");
     tr.append("<td>" + data[i].FirstName + "</td>");
     tr.append("<td>" + data[i].LastName + "</td>");
@@ -74,7 +75,21 @@ $(document).ready(function() {
   }
 
   // Highlight selected row
-  $("#table tr").click(function() {
-    $(this).addClass('selected').siblings().removeClass('selected');
+  // $("#table tr").click(function() {
+  //   $(this).addClass('selected').siblings().removeClass('selected');
+  // });
+
+  // $('input[type=radio]').change(function() {
+  //   $(this).closest('tr').addClass('selected').siblings().removeClass('selected');
+  // });
+
+  $('input[type=radio]').change(function() {
+    if (this.checked) {
+      $(this).closest('tr').addClass('selected')
+        .siblings().removeClass('selected');
+      $(this).closest('.table')
+        .find('input[type=radio]').not(this)
+        .prop('checked', false);
+    }
   });
 });
