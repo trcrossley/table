@@ -75,14 +75,6 @@ $(document).ready(function() {
   }
 
   // Highlight selected row
-  // $("#table tr").click(function() {
-  //   $(this).addClass('selected').siblings().removeClass('selected');
-  // });
-
-  // $('input[type=radio]').change(function() {
-  //   $(this).closest('tr').addClass('selected').siblings().removeClass('selected');
-  // });
-
   $('input[type=radio]').change(function() {
     if (this.checked) {
       $(this).closest('tr').addClass('selected')
