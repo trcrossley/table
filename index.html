@@ -30,7 +30,7 @@
     <div class="edit-box">
       <div class="edit-opt">
         <strong>Title</strong>
-        <select name="titles">
+        <select name="titles" id="titleform">
           <option></option>
           <option value="mr">Mr.</option>
           <option value="ms">Ms.</option>
@@ -39,22 +39,22 @@
       </div>
       <div class="edit-opt">
         <strong>First Name:</strong>
-        <input type="text" name="firstname">
+        <input type="text" name="firstname" id="fnform">
       </div>
       <div class="edit-opt">
         <strong>Last Name</strong>
-        <input type="text" name="lastname">
+        <input type="text" name="lastname" id="lnform">
       </div>
       <div class="edit-opt">
         <strong>Gender</strong>
-        <form action="">
+        <form action="" id="genderform">
           <input type="radio" name="gender" value="male"> Male
           <input type="radio" name="gender" value="female"> Female
         </form>
       </div>
       <div class="edit-opt">
         <strong>Country</strong>
-        <select name="country">
+        <select name="country" id="countryform">
           <option></option>
           <option value="usa">USA</option>
           <option value="canada">Canada</option>
